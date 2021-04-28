@@ -1,5 +1,8 @@
 name: make-lint
-on: [push]
+
+on:
+  - push
+  - pull_request
 jobs:
   Linter:
     runs-on: ubuntu-latest
