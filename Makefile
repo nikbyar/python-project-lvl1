@@ -14,6 +14,6 @@ package-install:
 	python3 -m pip install --user dist/*.whl
 
 linter:
-        poetry run flake8 brain_games
+	poetry run flake8 brain_games
 
 .PHONY: install test lint selfcheck check build
