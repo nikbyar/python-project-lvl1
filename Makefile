@@ -13,7 +13,7 @@ publish:
 package-install:
 	python3 -m pip install --user dist/*.whl
 
-linter
+linter:
         poetry run flake8 brain_games
 
 .PHONY: install test lint selfcheck check build
