@@ -5,8 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          make linter
-      - run: |
           pip install poetry
           make install
       - name: Run linter and pytest
