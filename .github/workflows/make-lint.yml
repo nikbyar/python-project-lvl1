@@ -4,8 +4,7 @@ jobs:
   Linter:
     runs-on: ubuntu-latest
     steps:
-      - run: make lint
-
+      - run: make linter
       - run: |
           pip install poetry
           make install
