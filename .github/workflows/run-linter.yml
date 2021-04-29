@@ -1,4 +1,4 @@
-name: Python CI
+name: run-linter
 
 on:
   - push
@@ -16,4 +16,4 @@ jobs:
           make install
       - name: Run linter
         run: |
-          poetry run flake8 brain_games
+          make lint
