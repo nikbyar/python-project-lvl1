@@ -17,4 +17,5 @@ jobs:
           make haha
       - name: Run linter
         run: |
-          poetry run flake8 brain_games
+          make haha
+          make lint
