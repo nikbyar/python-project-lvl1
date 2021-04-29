@@ -1,4 +1,4 @@
-name: run-linter
+name: Python CI
 
 on:
   - push
@@ -14,5 +14,6 @@ jobs:
         run: |
           pip install poetry
           make install
-      - name: Linter
-        run: make lint
+      - name: Run linter
+        run: |
+          make lint
