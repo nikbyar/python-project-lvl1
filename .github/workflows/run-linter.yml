@@ -17,5 +17,4 @@ jobs:
           make haha
       - name: Run linter
         run: |
-          make haha
           make lint
