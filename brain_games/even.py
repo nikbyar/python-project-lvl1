@@ -1,5 +1,5 @@
-import prompt
 import random
+import prompt
 
 start_random_range = -10000
 stop_random_range = 10000
