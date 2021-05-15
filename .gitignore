@@ -6,4 +6,6 @@ dist/
 .coverage
 coverage.xml
 .pytest_cache/
-test
+test.py
+even_backup.py
+cli_backup.py

@@ -9,9 +9,6 @@ random_integer = [
 
 
 def even_answer():
-    print('Welcome to the Brain Games!')
-    player_name = prompt.string('May I have your name? ')
-    print('Hello, {a}!'.format(a=player_name))
     print('Answer "yes" if the number is even, otherwise answer "no".')
     index = 0
     counter = 0
@@ -36,15 +33,9 @@ def even_answer():
                 "'{c}' is wrong answer ;(. Correct answer was '{d}'".
                 format(c=answer, d=correct_answer),
             )
-            print("Let's try again, {e}!".format(e=player_name))
+            # print("Let's try again, {e}!".format(e=player_name))
+            print("Let's try again!")
             break
     if counter > 2:
-        print('Congratulations, {e}!'.format(e=player_name))
-
-
-def main():
-    even_answer()
-
-
-if __name__ == 'main':
-    main()
+        print('Congratulations!')
+        # print('Congratulations, {e}!'.format(e=player_name))
