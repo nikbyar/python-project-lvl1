@@ -13,6 +13,9 @@ brain-gcd:
 brain-even:
 	@poetry run brain-even
 
+brain-prime:
+	@poetry run brain-prime
+
 brain-progr:
 	@poetry run brain-progression
 
