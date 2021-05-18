@@ -14,7 +14,7 @@ def progression():
             member_after_hidden = member + 2 * dif
             progr += ' ' + str(member)
         elif ind == hidden_member_ind:
-            progr += ' : ' + str(member_after_hidden)
+            progr += ' .. ' + str(member_after_hidden)
         else:
             member_after_hidden += dif
             hidden_member = member_after_hidden - dif * (10 - hidden_member_ind)
