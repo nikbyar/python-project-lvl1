@@ -4,8 +4,7 @@ from brain_games.games.gcd import gcd
 
 
 def main():
-    engine()
-    gcd()
+    engine(gcd)
 
 
 if __name__ == '__main__':

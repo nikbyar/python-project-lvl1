@@ -4,7 +4,8 @@
 [![Linter_Status](https://github.com/nikbyar/python-project-lvl1/actions/workflows/run-linter.yml/badge.svg)](https://github.com/nikbyar/python-project-lvl1/actions)
 
 
-[![asciicast](https://asciinema.org/a/411056.svg)](https://asciinema.org/a/411056)
-[![asciicast](https://asciinema.org/a/ZQQBtA0MOdFipmpnSBXRGzB4m.svg)](https://asciinema.org/a/ZQQBtA0MOdFipmpnSBXRGzB4m)
-[![asciicast](https://asciinema.org/a/ZDnkdg3UOtl6beWvPXqqj4NSD.svg)](https://asciinema.org/a/ZDnkdg3UOtl6beWvPXqqj4NSD)
-[![asciicast](https://asciinema.org/a/414622.svg)](https://asciinema.org/a/414622)
+[![asciicast](https://asciinema.org/a/414894.svg)](https://asciinema.org/a/414894)
+[![asciicast](https://asciinema.org/a/414895.svg)](https://asciinema.org/a/414895)
+[![asciicast](https://asciinema.org/a/414896.svg)](https://asciinema.org/a/414896)
+[![asciicast](https://asciinema.org/a/414897.svg)](https://asciinema.org/a/414897)
+[![asciicast](https://asciinema.org/a/414898.svg)](https://asciinema.org/a/414898)
