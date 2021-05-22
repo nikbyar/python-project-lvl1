@@ -1,8 +1,8 @@
 import random
 
 
-def even_answer():
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def answer_generator():
+    intro = 'Answer "yes" if the number is even, otherwise answer "no".'
     start_random_range = -10000
     stop_random_range = 10000
     random_integer = random.randint(start_random_range, stop_random_range)
@@ -10,4 +10,4 @@ def even_answer():
         answer = 'yes'
     else:
         answer = 'no'
-    return random_integer, answer
+    return random_integer, answer, intro
