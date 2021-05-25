@@ -1,7 +1,7 @@
 *.egg-info
 __pycache__
 dist/
-*.pyc
+**.pyc
 .venv/
 .coverage
 coverage.xml
@@ -9,3 +9,4 @@ coverage.xml
 test.py
 even_backup.py
 cli_backup.py
+
