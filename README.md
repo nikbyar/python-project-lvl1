@@ -4,6 +4,7 @@
 [![Linter_Status](https://github.com/nikbyar/python-project-lvl1/actions/workflows/run-linter.yml/badge.svg)](https://github.com/nikbyar/python-project-lvl1/actions)
 
 
+[![asciicast](https://asciinema.org/a/416180.svg)](https://asciinema.org/a/416180)
 [![asciicast](https://asciinema.org/a/414894.svg)](https://asciinema.org/a/414894)
 [![asciicast](https://asciinema.org/a/414895.svg)](https://asciinema.org/a/414895)
 [![asciicast](https://asciinema.org/a/414896.svg)](https://asciinema.org/a/414896)
