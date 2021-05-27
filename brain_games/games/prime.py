@@ -1,27 +1,23 @@
 import random
 
+INTRO = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 START_RANDOM_RANGE = 2
 STOP_RANDOM_RANGE = 50
 
 
-def prime(integ):
-    divisor = integ - 1
-    counter = 0
-    if integ < 2:
-        is_prime = 'no'
-        return is_prime
-    while divisor > 1:
-        if (integ % divisor == 0):
-            counter += 1
-        divisor -= 1
-    if counter > 0:
-        is_prime = 'no'
-    else:
-        is_prime = 'yes'
-    return is_prime
+def is_prime(number):
+    if number < 2:
+        return False
+    for divisor in range(2, number):
+        if (number % divisor == 0):
+            return False
+    return True
 
 
-def answer_generator():
+def generate_answer():
     random_integer = random.randint(START_RANDOM_RANGE, STOP_RANDOM_RANGE)
-    intro = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-    return random_integer, prime(random_integer), intro
+    if is_prime(random_integer):
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return random_integer, answer

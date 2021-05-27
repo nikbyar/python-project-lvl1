@@ -1,32 +1,24 @@
 import random
 
+INTRO = 'What number is missing in the progression?'
 START_RANDOM_RANGE = 0
 STOP_RANDOM_RANGE = 10
+PROGR_LENGTH = 10
 
 
-def progression(start, length, step):
-    member = start
-    progr = str(start)
-    hidden_member_ind = random.randint(1, length - 2)
-    for ind in range(length):
-        if ind < hidden_member_ind:
-            member += step
-            member_after_hidden = member + 2 * step
-            progr += ' ' + str(member)
-        elif ind == hidden_member_ind:
-            progr += ' .. ' + str(member_after_hidden)
-        else:
-            member_after_hidden += step
-            hidden_m = member_after_hidden - step * (length - hidden_member_ind)
-            progr += ' ' + str(member_after_hidden)
-
-    return progr, str(hidden_m)
+def generate_progression(start, length, step):
+    progression = []
+    for ind in range(0, length):
+        progression.append(str(start + ind * step))
+    return progression
 
 
-def answer_generator():
-    intro = 'What number is missing in the progression?'
-    initial_term = random.randint(START_RANDOM_RANGE, STOP_RANDOM_RANGE)
-    dif = random.choice([random.randint(-5, -1), random.randint(1, 5)])
-    progr_length = 10
-    output1, output2 = progression(initial_term, progr_length, dif)
-    return output1, output2, intro
+def generate_answer():
+    start = random.randint(START_RANDOM_RANGE, STOP_RANDOM_RANGE)
+    step = random.choice([random.randint(-5, -1), random.randint(1, 5)])  # noqa: WPS221
+    hidden_member_index = random.randint(0, PROGR_LENGTH - 1)
+    progression = generate_progression(start, PROGR_LENGTH, step)
+    hidden_member = progression[hidden_member_index]
+    progression[hidden_member_index] = '..'
+    progression = ' '.join(progression)
+    return progression, hidden_member

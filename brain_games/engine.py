@@ -1,14 +1,14 @@
 import prompt
 
 
-def engine(game):
+def run(game):
     print('Welcome to the Brain Games!')
     player_name = prompt.string('May I have your name? ')
     print(f'Hello, {player_name}!')
     counter = 0
+    print(game.INTRO)
     while counter < 3:
-        question, answer, intro = game.answer_generator()
-        print(intro)
+        question, answer = game.generate_answer()
         print(f'Question: {question}')
         # ответ игрока и условие, при которых ответ верен и неверен
         player_answer = prompt.string('Your answer: ')
@@ -17,8 +17,8 @@ def engine(game):
             counter += 1
         else:
             print(
-                "'{0}' is wrong answer ;(. Correct answer was '{1}'".
-                format(player_answer, answer),
+                f"'{player_answer}' is wrong answer ;(. "
+                f"Correct answer was '{answer}'",
             )
             print(f"Let's try again, {player_name}!")
             return
