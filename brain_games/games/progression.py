@@ -15,7 +15,7 @@ def generate_progression(start, length, step):
 
 def generate_answer():
     start = random.randint(START_RANDOM_RANGE, STOP_RANDOM_RANGE)
-    step = random.choice([random.randint(-5, -1), random.randint(1, 5)])  # noqa: WPS221
+    step = random.choice([random.randint(-5, -1), random.randint(1, 5)])
     hidden_member_index = random.randint(0, PROGR_LENGTH - 1)
     progression = generate_progression(start, PROGR_LENGTH, step)
     hidden_member = progression[hidden_member_index]
