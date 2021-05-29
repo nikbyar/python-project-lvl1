@@ -18,5 +18,5 @@ def find_gcd(num1, num2):
 def generate_answer():
     num1 = random.choice(COMPOSITE_NUMBERS)
     num2 = random.choice(COMPOSITE_NUMBERS)
-    two_rand_int = str(f'{num1} {num2}')
+    two_rand_int = f'{num1} {num2}'
     return two_rand_int, str(find_gcd(num1, num2))
