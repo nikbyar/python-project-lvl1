@@ -10,9 +10,9 @@ def is_even(num):
 
 
 def generate_answer():
-    random_integer = random.randint(START_RANDOM_RANGE, STOP_RANDOM_RANGE)
-    if is_even(random_integer):
+    question = random.randint(START_RANDOM_RANGE, STOP_RANDOM_RANGE)
+    if is_even(question):
         answer = 'yes'
     else:
         answer = 'no'
-    return random_integer, answer
+    return question, answer

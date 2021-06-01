@@ -1,5 +1,7 @@
 import prompt
 
+ATTEMPTS = 3
+
 
 def run(game):
     print('Welcome to the Brain Games!')
@@ -7,7 +9,7 @@ def run(game):
     print(f'Hello, {player_name}!')
     counter = 0
     print(game.INTRO)
-    while counter < 3:
+    while counter < ATTEMPTS:
         question, answer = game.generate_answer()
         print(f'Question: {question}')
         # ответ игрока и условие, при которых ответ верен и неверен
