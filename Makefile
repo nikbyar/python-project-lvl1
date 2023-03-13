@@ -1,4 +1,5 @@
 rave: build publish package-install brain-games
+raveli: build publish package-install lint brain-games
 
 install:
 	poetry install
@@ -10,6 +11,10 @@ brain-games:
 
 build:
 	poetry build
+
+
+lint:
+	poetry run flake8 brain_games
 
 
 package-install:
