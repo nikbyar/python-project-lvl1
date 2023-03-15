@@ -3,7 +3,7 @@ import random
 
 
 FIRST_RANDOM = 1
-LAST_RANDOM = 5
+LAST_RANDOM = 50
 ATTEMPTS = 3
 
 
@@ -24,17 +24,17 @@ def even():
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
     print(f"Hello, {name}!")
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    random_numbers = rand_even()
+    random_ints, is_even = rand_even()
     counter = 0
     while counter < ATTEMPTS:
-        print(f'Question: {random_numbers[0][counter]}')
+        print(f'Question: {random_ints[counter]}')
         answer = prompt.string('Your answer: ')
-        if answer == random_numbers[1][counter]:
+        if answer == is_even[counter]:
             print('Correct!')
             counter += 1
-        elif answer != random_numbers[1][counter]:
-            print(f"{answer} is wrong answer ;(. Correct answer was "
-                  f"{random_numbers[1][counter]}.\n"
+        elif answer != is_even[counter]:
+            print(f"'{answer}' is wrong answer ;(. Correct answer was "
+                  f"'{is_even[counter]}'.\n"
                   f"Let's try again, {name}")
             break
 
