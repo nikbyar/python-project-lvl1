@@ -5,3 +5,6 @@
 
 
 [![asciicast](https://asciinema.org/a/567569.svg)](https://asciinema.org/a/567569)
+
+
+<script async id="asciicast-567569" src="https://asciinema.org/a/567569.js"></script>
