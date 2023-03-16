@@ -1,5 +1,5 @@
 rave: build publish package-install
-raveli: build publish package-install lint brain-even
+raveli: build publish package-install lint
 
 install:
 	poetry install
@@ -11,6 +11,11 @@ brain-games:
 
 brain-even:
 	poetry run brain-even
+
+
+brain-calc:
+	poetry run brain-calc
+
 
 build:
 	poetry build
