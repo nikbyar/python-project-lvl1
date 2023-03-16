@@ -1,5 +1,5 @@
 rave: build publish package-install
-raveli: build publish package-install lint brain-gcd
+raveli: build publish package-install lint brain-progression
 
 install:
 	poetry install
@@ -19,6 +19,11 @@ brain-calc:
 
 brain-gcd:
 	poetry run brain-gcd
+
+
+brain-progression:
+	poetry run brain-progression
+
 
 build:
 	poetry build
