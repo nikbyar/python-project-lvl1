@@ -1,4 +1,3 @@
-import prompt
 import random
 
 
@@ -6,6 +5,7 @@ FIRST_RANDOM = 1
 LAST_RANDOM = 10
 WELCOME = 'What is the result of the expression?'
 SIGNS = ['+', '-', '*']
+
 
 def generate_question_answer():
     random_ints = [[random.randint(FIRST_RANDOM, LAST_RANDOM)
