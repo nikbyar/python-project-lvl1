@@ -22,7 +22,7 @@ def generate_question_answer():
         answer = str(full_progression[gap_index])
 
         gaped_progression = full_progression[:]
-        gaped_progression[gap_index] = '...'
+        gaped_progression[gap_index] = '..'
         gaped_progression = " ".join([str(i) for i in gaped_progression])
 
         gaped_progressions_list.append(gaped_progression)
