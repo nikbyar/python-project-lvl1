@@ -18,7 +18,7 @@ def engine(game):
         elif answer != right_answer[counter]:
             print(f"'{answer}' is wrong answer ;(. Correct answer was "
                   f"'{right_answer[counter]}'.\n"
-                  f"Let's try again, {name}")
+                  f"Let's try again, {name}!")
             break
 
     if counter == ATTEMPTS:
