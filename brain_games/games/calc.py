@@ -26,4 +26,3 @@ def generate_question_answer():
     question = [f'{(random_ints[i][0])} {random_signs[i]} '
                 f'{(random_ints[i][1])}' for i in range(0, ATTEMPTS)]
     return question, result
-

@@ -9,7 +9,6 @@ WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def check_if_prime(number):
-    counter = 0
     i = 2
     while i <= sqrt(number):
         if number % i == 0:
