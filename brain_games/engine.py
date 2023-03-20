@@ -1,6 +1,6 @@
 import prompt
 
-ATTEMPTS = 3
+ROUNDS = 3
 
 
 def engine(game):
@@ -9,7 +9,7 @@ def engine(game):
     print(game.WELCOME)
     question, right_answer = game.generate_question_answer()
     counter = 0
-    while counter < ATTEMPTS:
+    while counter < ROUNDS:
         print(f'Question: {question[counter]}')
         answer = prompt.string('Your answer: ')
         if answer == right_answer[counter]:
@@ -21,5 +21,5 @@ def engine(game):
                   f"Let's try again, {name}!")
             break
 
-    if counter == ATTEMPTS:
+    if counter == ROUNDS:
         print(f'Congratulations, {name}!')

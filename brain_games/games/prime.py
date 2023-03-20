@@ -1,6 +1,6 @@
 import random
 from math import sqrt
-from brain_games.engine import ATTEMPTS
+from brain_games.engine import ROUNDS
 
 
 FIRST_RANDOM = 1
@@ -22,7 +22,7 @@ def check_if_prime(number):
 
 def generate_question_answer():
     random_int = [random.randint(FIRST_RANDOM, LAST_RANDOM)
-                  for i in range(0, ATTEMPTS)]
+                  for i in range(0, ROUNDS)]
     answer = []
     for i in random_int:
         if check_if_prime(i):

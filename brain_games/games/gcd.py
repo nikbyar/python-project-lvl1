@@ -1,5 +1,5 @@
 import random
-from brain_games.engine import ATTEMPTS
+from brain_games.engine import ROUNDS
 
 
 FIRST_RANDOM = 1
@@ -19,7 +19,7 @@ def get_gcd(pair):
 
 def generate_question_answer():
     random_ints = [[random.randint(FIRST_RANDOM, LAST_RANDOM)
-                    for i in range(0, 2)] for j in range(0, ATTEMPTS)]
+                    for i in range(0, 2)] for j in range(0, ROUNDS)]
     result = []
     for pair in random_ints:
         result.append(get_gcd(pair))

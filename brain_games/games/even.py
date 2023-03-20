@@ -1,5 +1,5 @@
 import random
-from brain_games.engine import ATTEMPTS
+from brain_games.engine import ROUNDS
 
 
 FIRST_RANDOM = 1
@@ -14,7 +14,7 @@ def check_if_even(number):
 
 def generate_question_answer():
     random_ints = [random.randint(FIRST_RANDOM, LAST_RANDOM)
-                   for i in range(0, ATTEMPTS)]
+                   for i in range(0, ROUNDS)]
     is_even = []
     for i in random_ints:
         if check_if_even(i):

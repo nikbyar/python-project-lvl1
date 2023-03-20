@@ -1,5 +1,5 @@
 import random
-from brain_games.engine import ATTEMPTS
+from brain_games.engine import ROUNDS
 
 FIRST_RANDOM = 1
 LAST_RANDOM = 9
@@ -24,7 +24,7 @@ def progression_to_str(progression, gap_index):
 def generate_question_answer():
     gaped_progressions_list = []
     answers_list = []
-    for i in range(ATTEMPTS):
+    for i in range(ROUNDS):
         first_term = random.randint(FIRST_RANDOM, LAST_RANDOM)
         common_diff = random.randint(FIRST_RANDOM, LAST_RANDOM)
         gap_index = random.randint(FIRST_RANDOM, LAST_RANDOM)
