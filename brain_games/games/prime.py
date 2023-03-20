@@ -1,4 +1,5 @@
 import random
+from brain_games.engine import ATTEMPTS
 
 
 FIRST_RANDOM = 1
@@ -10,7 +11,7 @@ WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 def generate_question_answer():
     random_int = [random.randint(FIRST_RANDOM, LAST_RANDOM)
-                  for i in range(0, 3)]
+                  for i in range(0, ATTEMPTS)]
     answer = []
     for i in random_int:
         if i in PRIME_NUMBERS:

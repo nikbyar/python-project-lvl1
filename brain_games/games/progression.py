@@ -1,16 +1,16 @@
 import random
+from brain_games.engine import ATTEMPTS
 
 FIRST_RANDOM = 1
 LAST_RANDOM = 9
 WELCOME = 'What number is missing in the progression?'
 TERMS = 10
-COUNTS = 3
 
 
 def generate_question_answer():
     gaped_progressions_list = []
     answers_list = []
-    for i in range(COUNTS):
+    for i in range(ATTEMPTS):
         progression_start = random.randint(FIRST_RANDOM, LAST_RANDOM)
         diff = random.randint(FIRST_RANDOM, LAST_RANDOM)
         gap_index = random.randint(FIRST_RANDOM, LAST_RANDOM)

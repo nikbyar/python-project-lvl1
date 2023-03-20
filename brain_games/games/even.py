@@ -1,4 +1,5 @@
 import random
+from brain_games.engine import ATTEMPTS
 
 
 FIRST_RANDOM = 1
@@ -7,9 +8,8 @@ WELCOME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def generate_question_answer():
-    random_ints = [random.randint(FIRST_RANDOM, LAST_RANDOM),
-                   random.randint(FIRST_RANDOM, LAST_RANDOM),
-                   random.randint(FIRST_RANDOM, LAST_RANDOM)]
+    random_ints = [random.randint(FIRST_RANDOM, LAST_RANDOM)
+                   for i in range(0, ATTEMPTS)]
     is_even = []
     for i in random_ints:
         if i % 2 == 0:
