@@ -1,12 +1,24 @@
 import random
+from math import sqrt
 from brain_games.engine import ATTEMPTS
 
 
 FIRST_RANDOM = 1
 LAST_RANDOM = 100
-PRIME_NUMBERS = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41,
-                 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
 WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
+def check_if_prime(number):
+    counter = 0
+    i = 2
+    while i <= sqrt(number):
+        if number % i == 0:
+            return False
+        i += 1
+    if number > 1:
+        return True
+    else:
+        return False
 
 
 def generate_question_answer():
@@ -14,7 +26,7 @@ def generate_question_answer():
                   for i in range(0, ATTEMPTS)]
     answer = []
     for i in random_int:
-        if i in PRIME_NUMBERS:
+        if check_if_prime(i):
             answer.append('yes')
         else:
             answer.append('no')
