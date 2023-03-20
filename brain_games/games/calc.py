@@ -2,14 +2,14 @@ import random
 from brain_games.engine import ROUNDS
 
 
-FIRST_RANDOM = 1
-LAST_RANDOM = 10
+LOWER_BOUND = 1
+UPPER_BOUND = 10
 WELCOME = 'What is the result of the expression?'
 SIGNS = ['+', '-', '*']
 
 
 def generate_question_answer():
-    random_ints = [[random.randint(FIRST_RANDOM, LAST_RANDOM)
+    random_ints = [[random.randint(LOWER_BOUND, UPPER_BOUND)
                     for i in range(0, 2)] for j in range(0, ROUNDS)]
     random_signs = random.choices(SIGNS, k=ROUNDS)
     result = []

@@ -2,8 +2,8 @@ import random
 from brain_games.engine import ROUNDS
 
 
-FIRST_RANDOM = 1
-LAST_RANDOM = 50
+LOWER_BOUND = 1
+UPPER_BOUND = 50
 WELCOME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
@@ -13,7 +13,7 @@ def check_if_even(number):
 
 
 def generate_question_answer():
-    random_ints = [random.randint(FIRST_RANDOM, LAST_RANDOM)
+    random_ints = [random.randint(LOWER_BOUND, UPPER_BOUND)
                    for i in range(0, ROUNDS)]
     is_even = []
     for i in random_ints:

@@ -2,8 +2,8 @@ import random
 from brain_games.engine import ROUNDS
 
 
-FIRST_RANDOM = 1
-LAST_RANDOM = 100
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 WELCOME = 'Find the greatest common divisor of given numbers.'
 
 
@@ -18,7 +18,7 @@ def get_gcd(pair):
 
 
 def generate_question_answer():
-    random_ints = [[random.randint(FIRST_RANDOM, LAST_RANDOM)
+    random_ints = [[random.randint(LOWER_BOUND, UPPER_BOUND)
                     for i in range(0, 2)] for j in range(0, ROUNDS)]
     result = []
     for pair in random_ints:

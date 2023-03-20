@@ -3,8 +3,8 @@ from math import sqrt
 from brain_games.engine import ROUNDS
 
 
-FIRST_RANDOM = 1
-LAST_RANDOM = 100
+LOWER_BOUND = 1
+UPPER_BOUND = 100
 WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
@@ -21,7 +21,7 @@ def check_if_prime(number):
 
 
 def generate_question_answer():
-    random_int = [random.randint(FIRST_RANDOM, LAST_RANDOM)
+    random_int = [random.randint(LOWER_BOUND, UPPER_BOUND)
                   for i in range(0, ROUNDS)]
     answer = []
     for i in random_int:
