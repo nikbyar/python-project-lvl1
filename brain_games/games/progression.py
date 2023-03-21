@@ -2,7 +2,7 @@ import random
 from brain_games.engine import ROUNDS
 
 LOWER_BOUND = 1
-UPPER_BOUND = 9
+UPPER_BOUND = 10
 WELCOME = 'What number is missing in the progression?'
 TERMS = 10
 
