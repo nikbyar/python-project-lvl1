@@ -8,8 +8,7 @@ WELCOME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
-    if number % 2 == 0:
-        return True
+    return number % 2 == 0
 
 
 def generate_question_answer():
