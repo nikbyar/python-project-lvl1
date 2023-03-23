@@ -8,7 +8,7 @@ UPPER_BOUND = 100
 WELCOME = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def check_if_prime(number):
+def is_prime(number):
     i = 2
     while i <= sqrt(number):
         if number % i == 0:
@@ -25,7 +25,7 @@ def generate_question_answer():
                   for i in range(0, ROUNDS)]
     answer = []
     for i in random_int:
-        if check_if_prime(i):
+        if is_prime(i):
             answer.append('yes')
         else:
             answer.append('no')

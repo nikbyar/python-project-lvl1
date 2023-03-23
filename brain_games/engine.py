@@ -3,7 +3,7 @@ import prompt
 ROUNDS = 3
 
 
-def engine(game):
+def run_game(game):
     name = prompt.string('Welcome to the Brain Games!\nMay I have your name? ')
     print(f"Hello, {name}!")
     print(game.WELCOME)

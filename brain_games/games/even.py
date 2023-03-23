@@ -7,7 +7,7 @@ UPPER_BOUND = 50
 WELCOME = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
-def check_if_even(number):
+def is_even(number):
     if number % 2 == 0:
         return True
 
@@ -15,10 +15,10 @@ def check_if_even(number):
 def generate_question_answer():
     random_ints = [random.randint(LOWER_BOUND, UPPER_BOUND)
                    for i in range(0, ROUNDS)]
-    is_even = []
+    answer = []
     for i in random_ints:
-        if check_if_even(i):
-            is_even.append('yes')
+        if is_even(i):
+            answer.append('yes')
         else:
-            is_even.append('no')
-    return random_ints, is_even
+            answer.append('no')
+    return random_ints, answer
