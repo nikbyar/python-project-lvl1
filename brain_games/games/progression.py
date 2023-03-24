@@ -27,7 +27,7 @@ def generate_question_answer():
     for i in range(ROUNDS):
         first_term = random.randint(LOWER_BOUND, UPPER_BOUND)
         common_diff = random.randint(LOWER_BOUND, UPPER_BOUND)
-        gap_index = random.randint(LOWER_BOUND, UPPER_BOUND)
+        gap_index = random.randint(LOWER_BOUND, UPPER_BOUND - 1)
         progression = generate_progression(first_term, common_diff, TERMS)
         gaped_progression = progression_to_str(progression, gap_index)
         answer = str(progression[gap_index])
@@ -35,3 +35,4 @@ def generate_question_answer():
         gaped_progressions_list.append(gaped_progression)
         answers_list.append(answer)
     return gaped_progressions_list, answers_list
+
