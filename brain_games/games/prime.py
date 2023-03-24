@@ -14,10 +14,7 @@ def is_prime(number):
         if number % i == 0:
             return False
         i += 1
-    if number > 1:
-        return True
-    else:
-        return False
+    return number > 1
 
 
 def generate_question_answer():
