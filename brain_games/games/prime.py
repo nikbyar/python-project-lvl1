@@ -1,6 +1,5 @@
 import random
 from math import sqrt
-from brain_games.engine import ROUNDS
 
 
 LOWER_BOUND = 1
@@ -18,13 +17,9 @@ def is_prime(number):
 
 
 def generate_question_answer():
-    random_int = [random.randint(LOWER_BOUND, UPPER_BOUND)
-                  for i in range(0, ROUNDS)]
-    answer = []
-    for i in random_int:
-        if is_prime(i):
-            answer.append('yes')
-        else:
-            answer.append('no')
-    question = [str(i) for i in random_int]
-    return question, answer
+    random_int = random.randint(LOWER_BOUND, UPPER_BOUND)
+    if is_prime(random_int):
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return random_int, answer

@@ -1,5 +1,4 @@
 import random
-from brain_games.engine import ROUNDS
 
 
 LOWER_BOUND = 1
@@ -12,12 +11,9 @@ def is_even(number):
 
 
 def generate_question_answer():
-    random_ints = [random.randint(LOWER_BOUND, UPPER_BOUND)
-                   for i in range(0, ROUNDS)]
-    answer = []
-    for i in random_ints:
-        if is_even(i):
-            answer.append('yes')
-        else:
-            answer.append('no')
-    return random_ints, answer
+    random_int = random.randint(LOWER_BOUND, UPPER_BOUND)
+    if is_even(random_int):
+        answer = 'yes'
+    else:
+        answer = 'no'
+    return random_int, answer
