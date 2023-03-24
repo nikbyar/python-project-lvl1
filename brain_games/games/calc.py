@@ -9,10 +9,6 @@ NUMBER_OF_RANDOM_NUMBERS_IN_EXPRESSION = 2
 
 
 def generate_question_answer():
-    # random_ints = [[random.randint(LOWER_BOUND, UPPER_BOUND)
-    #                 for i in range(0, 2)] for j in range(0, ROUNDS)]
-    # создание списка через генератор списков
-
     random_ints = []
     for i in range(ROUNDS):
         question = []

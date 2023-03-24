@@ -35,4 +35,3 @@ def generate_question_answer():
         gaped_progressions_list.append(gaped_progression)
         answers_list.append(answer)
     return gaped_progressions_list, answers_list
-
